@@ -1,0 +1,17 @@
+{
+  "name": "qa-challenge-web-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "cypress": "^15.0.0",
+    "typescript": "^5.0.0"
+  }
+}
