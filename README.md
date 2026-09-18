@@ -1,5 +1,20 @@
 # QA Challenge — Web | Cypress + TypeScript
 
+## Estrutura do projeto
+
+```
+.
+├── .github/workflows/ci.yml   # Pipeline do GitHub Actions (typecheck + testes)
+├── cypress.config.ts          # Configuração do Cypress (baseUrl, vídeo, retries)
+├── cypress/
+│   ├── e2e/                   # Os testes em si, um arquivo por cenário/feature
+│   └── support/
+│       ├── commands.ts        # Comandos customizados reutilizáveis (ex: cy.visitBlog)
+│       └── e2e.ts             # Configuração global carregada antes de cada teste
+├── package.json                # Scripts (npm test, typecheck etc.) e dependências
+└── tsconfig.json               # Configuração do TypeScript
+```
+
 ## Cenários automatizados
 
 **`cypress/e2e/search.cy.ts` — Pesquisa de artigos**
